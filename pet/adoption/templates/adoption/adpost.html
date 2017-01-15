@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Post Pet Adoption Advertisement</title>
+</head>
+<body>
+<form method="POST" action="info/" name="form1">
+{% csrf_token %}
+<table width="70%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+  <td>name:</td>
+  <td colspan="2"><input type="text" name="name"></td>
+</tr>
+<tr>
+  <td>phone_number:</td>
+  <td colspan="2"><input type="number" name="phone_name"></td>
+</tr>
+<tr>
+  <td>email:</td>
+  <td colspan="2"><input type="email" name="email"></td>
+</tr>
+<tr>
+  <td>title:</td>
+  <td colspan="2"><input type="text" name="title"></td>
+</tr>
+<tr>
+  <td>description:</td>
+  <td colspan="2"><textarea name="description" cols="40" rows="5"></textarea></td>
+</tr>
+<tr>
+  <td>type_of_pet:</td>
+  <td colspan="2"><input type="radio" name="type_of_pet" value="CAT" checked> Cat</td>
+  <td colspan="2"><input type="radio" name="type_of_pet" value="DOG"> Dog</td>
+  <td colspan="2"><input type="radio" name="type_of_pet" value="FISH"> Fish</td>
+  <td colspan="2"><input type="radio" name="type_of_pet" value="BIRD"> Bird</td>
+</tr>
+<tr>
+  <td>birth_date:</td>
+  <td colspan="2"><input type="date" name="birth_date"></td>
+</tr>
+<tr>
+  <td>neutered:</td>
+  <td colspan="2"><input type="radio" name="neutered" value="false" checked> False</td>
+  <td colspan="2"><input type="radio" name="neutered" value="true"> True</td>
+</tr>
+<tr>
+  <td>gender:</td>
+  <td colspan="2"><input type="radio" name="gender" value="N" checked> Not Applicable</td>
+  <td colspan="2"><input type="radio" name="gender" value="M"> Male</td>
+  <td colspan="2"><input type="radio" name="gender" value="F"> Female</td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td colspan="2"><input type="submit" name="Submit" value="Submit"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

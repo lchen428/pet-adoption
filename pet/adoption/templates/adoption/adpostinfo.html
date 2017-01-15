@@ -1,0 +1,18 @@
+{% extends 'adoption/base.html' %}
+
+{% block main %}
+ <div>
+ <h1>owner post ad</h1>
+
+ <p>
+   <ul>
+   {% if user %}
+     <li>
+       <a>Hello {{ name }}!</a>
+       <a>Gender: {{ gender }}</a>
+     </li>
+   {% endif %}
+   </ul>
+ </p>
+ </div>
+{% endblock %}
