@@ -92,3 +92,6 @@ ENV/
 
 # Test Database
 pet/db.sqlite3
+
+# Environment Variables
+export.sh

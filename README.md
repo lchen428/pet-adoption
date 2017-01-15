@@ -13,3 +13,5 @@ This project uses django and django-rest framework. It provides admin interface,
  * python manage.py migrate
  * python manage.py createsuperuser
  * python manage.py runserver
+
+You can put your environment variables in a file called export.sh which will be ignored by git
